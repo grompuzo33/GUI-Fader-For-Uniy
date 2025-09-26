@@ -6,7 +6,7 @@ public class ScreenFader : MonoBehaviour
 {
     private static ScreenFader instance;
     [SerializeField] private Image fadeImage;
-    [SerializeField] private float fadeDuration = 0.5f; // ƒлительность затухани€ и по€влени€
+    [SerializeField] private float fadeDuration = 0.5f; // Duration of attenuation and appearance
 
     public static ScreenFader Instance
     {
@@ -120,9 +120,9 @@ public class ScreenFader : MonoBehaviour
         fadeImage.gameObject.SetActive(false);
     }
 
-    // ƒополнительные статические методы дл€ контрол€
+    // Additional static methods for monitoring
 
-    // ѕринудительно установить затемнение 
+    
     public static void SetFade(float alpha)
     {
         if (Instance != null && Instance.fadeImage != null)
